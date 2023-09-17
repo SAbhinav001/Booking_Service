@@ -2,7 +2,7 @@ const { StatusCodes } = require("http-status-codes");
 const { Booking } = require("../models");
 const { ValidationError, AppError } = require("../utils");
 
-class BookingRepository {
+class BookingRepository  {
   async create(data) {
     try {
         const booking = await Booking.create(data)
