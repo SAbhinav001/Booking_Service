@@ -9,7 +9,9 @@ const startAndSetupServer = () => {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
-  app.use("/api", apiRoutes);
+
+  
+  app.use('/bookingservice/api', apiRoutes);
 
   app.listen(PORT, async() => {
     console.log(`Listening on port ${PORT}`);
